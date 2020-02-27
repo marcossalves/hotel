@@ -1,127 +1,259 @@
 <!DOCTYPE html>
-<header lang="pt-br">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hotel Bates</title>
-    <!-- link css do site bootstrap -->
+    <title>W HOTEL</title>
+    <!-- CSS de origem boostrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-      link
     />
-
     <link rel="stylesheet" href="css/hotel.css" />
-    
   </head>
   <body>
-   
-  
+    <!--########### Início da barra de navegação ###########  -->
 
-  <!-- ################################## Início da barra de navegação #############################################-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">W HOTEL</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-
-
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">HOTEL DO CHIADO</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">HOME</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            ACOMODAÇÃO
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="suitesstandard.html"
-              >Suite Standard</a
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-            <a class="dropdown-item" href="suitedouble.html">Suite Double</a>
-            <a class="dropdown-item" href="suitemaster.html">Suite Master</a>
+              Acomodação
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="suitestandard.html"
+                >Suite Standard</a
+              >
+              <a class="dropdown-item" href="suitedouble.html">Suite Double</a>
+              <a class="dropdown-item" href="suitemaster.html">Suite Master</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lazer.html">Lazer</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gastronomia.html">Gastronomia</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="eventos.html">Eventos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reservas.html">Reservas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="localizacao.html">Localização</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--########## Fim da barra de navegação ##########  -->
+
+    <header>
+      <h1>HOTEL CELESTE</h1>
+      <img src="img/logo.png" alt="W HOTEL" />
+    </header>
+
+    <main>
+      <div class="container-fluid"></div>
+      <h2>Realize a sua reserva</h2>
+
+      <!-- ############ Início do formulário de reservas ############ -->
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="Nome">Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Nome"
+              placeholder="Nome Completo"
+              required
+            />
           </div>
-        </li>
+          <div class="form-group col-md-4">
+            <label for="CPF">CPF</label>
+            <input
+              type="text"
+              class="form-control"
+              id="CPF"
+              placeholder="xxx.xxx.xxx-xx"
+              required
+            />
+          </div>
+          </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="Lazer.html">LAZER</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                placeholder="email@dominio.com"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="Telefone">Telefone</label>
+              <input
+                type="tell"
+                class="form-control"
+                id="Telefone"
+                placeholder="(xx) xxxxx-xxxx"
+                required
+              />
+            </div>
+          </div>
 
-  <!-- ################################## Fim da barra de navegação ################################################-->
-<header>
+          <!-- Abaiaxo as informações sobre a hospedagem -->
 
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="Suite">Suite</label>
+              <select id="Suite" class="form-control">
+                <option selected>Selecione</option>
+                <option value="Suite Standard"> Suite Standard </option>
+                <option value="Suite Double"> Suite Double </option>
+                <option value="Suite Master"> Suite Master</option>
+              </select>
+            </div>
 
-</header>
+            <div class="form-group col-md-2">
+              <label for="CheckIn">Check-In</label>
+              <input
+                type="date"
+                class="form-control"
+                id="CheckIn"
+                required
+              />
+            </div>
 
-<h1>HOTEL BATES</h1>
-<img src="img/logo.jpg" alt=" HOTEL BATES">
-</header>
+            <div class="form-group col-md-2">
+              <label for="CheckOut">Check-Out</label>
+              <input
+                type="date"
+                class="form-control"
+                id="CheckOut"
+                required
+              />
+            </div>
 
-<main>
+            <div class="form-group col-md-2">
+              <label for="NAdulto">Nº Adultos</label>
+              <input
+                type="number"
+                class="form-control"
+                id="NAdulto"
+                max="5"
+                min="1"
+                value="1"
+                required
+              />
+            </div>
 
-    <div class="container-fluid"></div>
-</main>
-<footer>
-    <!-- #################################Inicio do footer###################################-->
+            <div class="form-group col-md-2">
+              <label for="NCrianca">Nº Crianças</label>
+              <input
+                type="number"
+                class="form-control"
+                id="NCrianca"
+                max="3"
+                min="1"
+                value="0"
+                required
+              />
+            </div>
 
-    <div class="card">
+          </div>
+
+          
+
+          <!-- Fim das informações de hospedagem -->
+
+        </div>
+        <div class="form-group">
+          <label for="Observacao">Observação</label>
+          <textarea class="form-control"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-danger">Efetuar reserva</button>
+      </form>
+
+      <!-- ############ Fim do formulário de reservas ############ -->
+    </main>
+
+    <footer>
+      <!-- ############ Início do Footer ############ -->
+
+      <div class="card">
         <div class="card-header">
           Contato
         </div>
         <div class="card-body">
-          <h5 class="card-title">Endereço: <br> Av. Nove de agosto, 154 - vila luiza - SP</h5>
+          <h5 class="card-title">
+            Endereço:<br />Av. Europa, 158 - Jardins - SP
+          </h5>
           <p class="card-text">
-              Tel: +55 11 5682-6695 | + 55  11 5568-5557 <br>
-
-          <a href="mailto:contato@hotelchiado.com.br">contato@hotelchiado.com.br</a>
-</p>
-          
+            Tel: +55 11 4002-8922 | +55 11 8922-4002 <br />
+            <a href="mailto:contato@hotelceleste.com.br"
+              >contato@hotelceleste.com.br</a
+            >
+          </p>
         </div>
       </div>
-<!-- #################################Fim do footer###################################-->
-</footer>
 
- <!-- Scripts de origem bootstrap-->
- <script
- src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
- integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
- crossorigin="anonymous"
-></script>
-<script
- src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
- integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
- crossorigin="anonymous"
-></script>
-<script
- src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
- integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
- crossorigin="anonymous"
-></script>
-</body>
+      <!-- ############ Fim do Footer ############ -->
+    </footer>
+
+    <!-- Scripts JS de origem boostrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

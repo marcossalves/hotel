@@ -65,7 +65,6 @@
             <a class="dropdown-item" href="suitemaster.html">Suite Master</a>
           </div>
         </li>
-
       </li>
 
       <li class="nav-item">
@@ -90,6 +89,7 @@
         <a class="nav-link" href="localizacao.html">LOCALIZAÇÃO</a>
       </li>
 
+
         <li class="nav-item">
           <a class="nav-link" href="Lazer.html">LAZER</a>
         </li>
@@ -109,98 +109,134 @@
 
 <main>
 
+
+
     <div class="container-fluid"></div>
 
+    <h2> Realize a sua reserva</h2>
+
+    <!--########################################################Inicio do formulário de reservas################################### -->
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label for="Nome">Nome</label>
+          <input type="text" class="form-control" id="Nome" placeholder="Nome Completo"required/>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="CPF">CPF</label>
+          <input type="text" class="form-control" id="CPF" placeholder="XXX.XXX.XXX-XX" required/>
+        </div>
 
 
-    <!-- Inicio das imagens em miniatura-->
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="E-mail">E-mail</label>
+            <input type="text" class="form-control" id="Nome" placeholder="Nome Completo"required/>
+          </div>
 
-<div id="imglazer"><img src="img/lazer1.jpg" alt=""data-toggle="modal" 
-  data-target=".bd-example-modal-xl"/>
+          <div class="form-group col-md-4">
+            <label for="Telefone">Telefone</label>
+            <input type="Tel" class="form-control" id="Telefone" placeholder="XXX.XXX.XXX-XX" required/>
+          </div>
 
-  <img src="img/lazer2.jpg" alt=""data-toggle="modal" 
-  data-target=".bd-example-modal-xl2"/>
-
-  <img src="img/lazer3.jpg" alt=""data-toggle="modal" 
-  data-target=".bd-example-modal-xl3"/>
-  <br>
-  <img src="img/lazer4.jpg" alt=""data-toggle="modal" 
-  data-target=".bd-example-modal-x4"/>
-
-  <img src="img/lazer5.jpg" alt=""data-toggle="modal" 
-  data-target=".bd-example-modal-xl5"/>
-
-  <img src="img/lazer8.jpg" alt=""data-toggle="modal" 
-  data-target=".bd-example-modal-xl8"/>
-
-</div>
-
-    <!-- Fim das imagens em miniatura-->
+          <!-- Abaixo as informações sobre a hospedagem-->
 
 
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="Suite">Suite</label>
 
-    
+              <select id="Suite" Class="form-control">
+
+                <option selected> Selecione</option>
+              
+
+              <option value="Suite Standard"> Suite Standard</option>
+          
+
+              <option value="Suite Standard"> Suite Double</option>
+        
+
+              <option value="Suite Standard"> Suite Master</option>
+              </select>
+
+              
+              <input type="CheckIn" class="form-control" id="Check-In" placeholder="CheckIn"required/>
+            </div>
+  
+            <div class="form-group col-md-2">
+              <label for="CheckOut">CheckOut</label>
+              <input type="Tel" class="form-control" id="Telefone" placeholder="XXX.XXX.XXX-XX" required/>
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="NAdulto">N° Adultos</label>
+
+              
+              <input type="number" class="form-control" id="NAdulto"
+              max="5"
+              min="1"
+              value="1"
+              required/>
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="Ncrianças">N° Crianças</label>
+              <input 
+              type="Tel" class="form-control" id="Telefone" placeholder="XXX.XXX.XXX-XX" required/>
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="Telefone">Telefone</label>
+              <input type="Tel" class="form-control" id="Telefone" placeholder="XXX.XXX.XXX-XX" required/>
+            </div>
 
 
-    <!--Início do modal das imagens-->
+          <!--Fim das informações sobre a hospedagem-->
+        
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"/>
+      </div>
 
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <img src="img/lazer1.jpg" alt="">
+      <div class="form-group">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+      </div>
+
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <inp
+          
+          sassasut type="text" class="form-control" id="inputZip">
         </div>
       </div>
-    </div>
-
-
-    <div class="modal fade bd-example-modal-xl2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <img src="img/lazer2.jpg" alt="">
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
         </div>
       </div>
-    </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
 
-
-    <div class="modal fade bd-example-modal-xl3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <img src="img/lazer3.jpg" alt="">
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    
-    <div class="modal fade bd-example-modal-xl4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <img src="img/lazer4.jpg" alt="">
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal fade bd-example-modal-xl5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <img src="img/lazer5.jpg" alt="">
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal fade bd-example-modal-xl8" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <img src="img/lazer8.jpg" alt="">
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Fim do modal das imagens-->
+    <!--########################################################Fim do Formulário de reservas######################################-->
 </main>
 <footer>
     <!-- #################################Inicio do footer###################################-->
